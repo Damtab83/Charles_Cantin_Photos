@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import './components/css/Home.css';
 import './App.css';
+import MainLayout from './layout/MainLayout';
+import cover from './img/photographe.jpg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div classname="App">
+      <MainLayout>
+        <img className='image-cover' src={cover} alt="photographe" />
+        <div className='title'>
+          <h1 className='title1'>Charles Cantin</h1>
+          <h2 className='title2'>Photographe</h2>
+        </div>
+      </MainLayout>
     </div>
+    
   );
 }
 
