@@ -5,12 +5,13 @@
 .navbar, .footer {
   display: flex;
   justify-content: space-between;
-  background-color: #4066fa;
+  background-color: #38AECC;
   padding: 10px 16px;
+  color: white;
 }
 
 .navbar-logo {
-  color:white;
+  color:#FDFFFC;
   font-size: 20px;
 }
 
@@ -24,7 +25,7 @@
 
 .navbar-menu li a, .footer-menu li a {
   text-decoration: none;
-  color: white;
+  color: #FDFFFC;
 }
 
 .image-logo {
