@@ -1,6 +1,6 @@
 import React from 'react';
 import MainLayout from '../../layout/MainLayout';
-import Card from './Card';
+import GalleryCarousel from './GalleryCarousel';
 
 const Gallery = () => {
 
@@ -9,7 +9,7 @@ const Gallery = () => {
 
   return (
     <MainLayout>
-      <Card />
+      <GalleryCarousel />
 
     </MainLayout>
 
