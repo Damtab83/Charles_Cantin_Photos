@@ -7,7 +7,7 @@ const Contact = () => {
 
   return (
     <MainLayout>
-      <h1>Connexion</h1>
+      <h1 className='title'>Connexion</h1>
       <div className='contact'>
         <form 
           name="contact" 

@@ -6,7 +6,7 @@ const MainLayout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <div class="mainBody">{children}</div>
+      <div class="mainBody">{ children }</div>
       <Footer />
     </>
   )
