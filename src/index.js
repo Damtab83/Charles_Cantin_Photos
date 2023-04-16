@@ -6,9 +6,9 @@ import {
     createBrowserRouter,
     RouterProvider,
   } from "react-router-dom";
-import Contact from '../src/components/pages/Contact';
-import Service from '../src/components/pages/Service';
-import Gallery from './components/pages/Gallery';
+import Contact from '../src/pages/Contact';
+import Service from '../src/pages/Service';
+import Gallery from '../src/pages/Gallery';
 
   const router = createBrowserRouter([
     {

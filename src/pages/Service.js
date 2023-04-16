@@ -1,9 +1,11 @@
 import React from 'react'
-import MainLayout from '../../layout/MainLayout'
+import MainLayout from '../layout/MainLayout'
+import ServiceList from '../components/servicelist'
+
 const Service = () => {
   return (
     <MainLayout>
-      Service
+      <ServiceList />
     </MainLayout>
   )
 }

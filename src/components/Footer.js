@@ -8,7 +8,8 @@ import { FiTwitter } from "react-icons/fi";
 const Footer = () => {
   return (
     <div className='footer'>
-      <h5><CgCopyright />Tabary Damien 2023</h5>
+      <h5><CgCopyright /><a href="https://github.com/Damtab83/Charles_Cantin_Photos.git">Tabary Damien</a> 2023</h5>
+      
       <ul className="footer-menu">
         <li><Link to="#"><FaFacebook /></Link></li>
         <li><Link to="#"><BsInstagram /></Link></li>
