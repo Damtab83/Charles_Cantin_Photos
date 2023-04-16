@@ -1,5 +1,4 @@
 import React from "react"
-import { Link }  from "react-router-dom"
 import Markdown from "react-markdown"
 import servicelist from "../posts.json"
 import './css/Photolist.css'
@@ -20,8 +19,8 @@ const ServiceList = () => {
                                 <h2 className="photo-title">{service.categories}</h2>
                                 <h4 className="photo-title">{service.price}</h4>
                             </div>
+                            <hr/>
                             <Markdown source={excerptList[i]} escapeHtml={false} />
-                            <small><Link className="links" to={`/post/${service.id}`}>Read more</Link></small>
                         </div>
                     )
                 })
