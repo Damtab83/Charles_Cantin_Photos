@@ -1,6 +1,36 @@
+/*SERVICELIST*/
+.title-servicelist {
+  margin: 20px 0;
+  text-align: center;
+  font-family: cursive;
+  color: #38AECC;
+  font-size: 3rem;
+}
 
-.title-photolist {
+.photo-card-service {
+  text-align: left;
+  font-family: cursive;
+  border: 1px solid lightblue;
   margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.img-container-service {
+  display: flex;
+}
+
+.thumbnail {
+  padding: 10px;
+}
+
+
+/* POSTLIST */
+.title-photolist {
+  margin: 20px 0;
+  text-align: center;
+  font-family: cursive;
+  color: #38AECC;
+  font-size: 3rem;
 }
 
 .photo-card {

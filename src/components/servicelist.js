@@ -9,14 +9,14 @@ const ServiceList = () => {
     })
     return (
         <div className="photolist">
-            <h1 className="title-photolist">Tarifs et Service</h1>
+            <h1 className="title-servicelist">Tarifs et Service</h1>
             {servicelist.length && 
                 servicelist.map((service, i) => {
                     return (
-                        <div key={i} className="photo-card">
-                             <div className="img-container">
+                        <div key={i} className="photo-card-service">
+                             <div className="img-container-service">
                                 {service.thumbnail && <img className="thumbnail" width={80} src={service.thumbnail} alt=""/> }
-                                <h2 className="photo-title">{service.categories}</h2>
+                                <h2 className="photo-title">{service.category}</h2>
                                 <h4 className="photo-title">{service.price} €</h4>
                                 <p>{service.content}</p>
                             </div>

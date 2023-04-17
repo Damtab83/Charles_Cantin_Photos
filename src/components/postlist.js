@@ -16,7 +16,7 @@ const PostList = () => {
                     return (
                         <div key={i} className="photo-card">
                              <div className="img-container">
-                                {post.thumbnail && <img className="thumbnail" width={80} src={post.thumbnail} alt=""/> }
+                                {post.thumbnail && <img className="thumbnail" width={120} src={post.thumbnail} alt=""/> }
                                 <h2 className="photo-title"><Link className="links" to={`/post/${post.id}`}>{post.title}</Link></h2>
                             </div>
                             <Markdown source={excerptList[i]} escapeHtml={false} />
