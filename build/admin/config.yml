@@ -21,7 +21,7 @@ collections:
       - {label: "Prix", name: "price", widget: "number", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - widget: select
-        label: "Categories"
+        label: "Category"
         name: "category"
         create: true
         options: ["Mariage", "Grossesse", "Bébé", "Famille", "Baptême", "Couple", "Solo"]
