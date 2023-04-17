@@ -79,9 +79,8 @@ const getPosts = () => {
                 post = {
                     id: timestamp,
                     title: metadata.title ? metadata.title : "No title given",
-                    date: publishedDate ? publishedDate : "No date given",
-                    price: metadata.price ? metadata.price : "No price given",
-                    categories: metadata.categories ? metadata.categories : "No categories given",
+                    price: metadata.price ? metadata.price : "Sur devis",
+                    categories: metadata.categories ? metadata.categories : "",
                     thumbnail: metadata.thumbnail,
                     content: content ? content : "No content given",
                 }

@@ -15,12 +15,11 @@ const PostList = () => {
                 postlist.map((post, i) => {
                     return (
                         <div key={i} className="photo-card">
+                                {post.thumbnail && <img className="thumbnail" width={400} src={post.thumbnail} alt=""/> }
                              <div className="img-container">
-                                {post.thumbnail && <img className="thumbnail" width={120} src={post.thumbnail} alt=""/> }
                                 <h2 className="photo-title"><Link className="links" to={`/post/${post.id}`}>{post.title}</Link></h2>
                             </div>
                             <Markdown source={excerptList[i]} escapeHtml={false} />
-                            <small><Link className="links" to={`/post/${post.id}`}>Read more</Link></small>
                         </div>
                     )
                 })
