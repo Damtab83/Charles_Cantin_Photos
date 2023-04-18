@@ -1,9 +1,9 @@
 *{margin:0; padding:0}
 
-.mainBody {
+/* .mainBody {
   min-height: 82vh;
   max-height: 300vh;
-}
+} */
 
 
 /*  NAVBAR STYLES  */
@@ -42,4 +42,3 @@
 .footer-menu li a {
   margin: 0 25px;
 }
-

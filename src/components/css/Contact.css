@@ -1,4 +1,6 @@
-
+.body-contact {
+  min-height: 80vh;
+}
 .title-form {
   font-family: cursive;
   color: #38AECC;
