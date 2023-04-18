@@ -14,3 +14,14 @@
   right: 27vw;
 }
 
+.title1 {
+  text-align: center;
+    font-size: 4rem;
+    margin: auto;
+}
+
+.title2 {
+  text-align: center;
+    font-size: 3rem;
+    margin: auto;
+}

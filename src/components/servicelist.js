@@ -15,9 +15,9 @@ const ServiceList = () => {
                     return (
                         <div key={i} className="photo-card-service">
                              <div className="img-container-service">
-                                {service.thumbnail && <img className="thumbnail" width={80} src={service.thumbnail} alt=""/> }
-                                <h2 className="photo-title">{service.category}</h2>
-                                <h4 className="photo-title">{service.price} €</h4>
+                                {service.thumbnail && <img className="thumbnail" width={80} src={service.thumbnail} alt={service.categories}/> }
+                                <h2>{service.categories}</h2>
+                                <h4>{service.price} €</h4>
                                 <p>{service.content}</p>
                             </div>
                             <hr/>

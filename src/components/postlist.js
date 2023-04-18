@@ -14,12 +14,14 @@ const PostList = () => {
             {postlist.length && 
                 postlist.map((post, i) => {
                     return (
-                        <div key={i} className="photo-card">
-                                {post.thumbnail && <img className="thumbnail" width={400} src={post.thumbnail} alt=""/> }
-                             <div className="img-container">
-                                <h2 className="photo-title"><Link className="links" to={`/post/${post.id}`}>{post.title}</Link></h2>
+                        <div className="photo-box">
+                            <div key={i} className="photo-card">
+                                    {post.thumbnail && <img className="thumbnail" width={400} src={post.thumbnail} alt={post.categories}/> }
+                                
+                                    <h2 className="photo-title"><Link className="links" to={`/post/${post.id}`}>{post.title}</Link></h2>
+                            
+                                <Markdown source={excerptList[i]} escapeHtml={false} />
                             </div>
-                            <Markdown source={excerptList[i]} escapeHtml={false} />
                         </div>
                     )
                 })

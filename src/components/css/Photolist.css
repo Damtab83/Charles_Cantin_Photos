@@ -17,14 +17,25 @@
 
 .img-container-service {
   display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
 .thumbnail {
   padding: 10px;
 }
 
+.img-container-service h4 {
+  margin-left: 2vw;
+}
+
+.img-container-service p {
+  margin-left: 1vw;
+}
 
 /* POSTLIST */
+
 .title-photolist {
   margin: 20px 0;
   text-align: center;
@@ -41,10 +52,11 @@
   padding: 0 20px;
 }
 
-.img-container {
-  display: flex;
-}
-
 .thumbnail {
   padding: 10px;
 }
+
+.photo-box {
+  margin: 0 auto;
+}
+
