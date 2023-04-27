@@ -1,8 +1,8 @@
 import React from "react"
-import { Link }  from "react-router-dom"
 import Markdown from "react-markdown"
 import postlist from "../posts.json"
 import './css/Photolist.css'
+import Category from "./Category"
 
 const PostList = () => {
     const excerptList = postlist.map(post => {
@@ -11,21 +11,21 @@ const PostList = () => {
     return (
         <div className="photolist">
             <h1 className="title-photolist">Galerie Photos</h1>
-            {postlist.length && 
-                postlist.map((post, i) => {
-                    return (
-                        <div className="photo-box">
-                            <div key={i} className="photo-card">
-                                    {post.thumbnail && <img className="thumbnail" width={400} src={post.thumbnail} alt={post.categories}/> }
-                                
-                                    <h2 className="photo-title"><Link className="links" to={`/post/${post.id}`}>{post.title}</Link></h2>
+            <Category />
+            
+            <div className="gallery">
+                {postlist.length && 
+                    postlist.map((post, i) => {
+                        return (
+                            <div key={i} className="photo-gallery">
+                                    {post.thumbnail && <img style={{width: '100%'}} src={post.thumbnail} alt={post.categories}/> }
                             
                                 <Markdown source={excerptList[i]} escapeHtml={false} />
                             </div>
-                        </div>
-                    )
-                })
-            }
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }
