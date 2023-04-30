@@ -1,33 +1,53 @@
-import React from "react"
-import Markdown from "react-markdown"
+import React, { useEffect, useState } from 'react'
 import postlist from "../posts.json"
 import './css/Photolist.css'
-import Category from "./Category"
 
 const PostList = () => {
-    const excerptList = postlist.map(post => {
-        return post.content.split(" ").slice(0, 20).join(" ") + "..."
-    })
+
+    const [cate, setCate] = useState('all');
+    const [filteredImages, setFilteredImages] = useState([]);
+  
+    useEffect(
+      () => {
+        cate === 'all' ? setFilteredImages(postlist) : setFilteredImages(postlist.filter(image => image.categories === cate))
+      }, [cate])
+  
+      const onChange = (event) => {
+        const value = event.target.value;
+        setCate(value);
+      }
     return (
-        <div className="photolist">
-            <h1 className="title-photolist">Galerie Photos</h1>
-            <Category />
-            
-            <div className="gallery">
-                {postlist.length && 
-                    postlist.map((post, i) => {
-                        return (
-                            <div key={i} className="photo-gallery">
-                                    {post.thumbnail && <img style={{width: '100%'}} src={post.thumbnail} alt={post.categories}/> }
-                            
-                                <Markdown source={excerptList[i]} escapeHtml={false} />
-                            </div>
-                        )
-                    })
-                }
-            </div>
-        </div>
+      <>
+      {/* Menu Category */}
+      <div className='category-bar'>
+        <label for="category">Catégories:</label>
+        <select name="category" id="category-select" onChange={onChange}>
+          <option value="all">Toutes les catégories</option>
+          <option value="solo">Portrait</option>
+          <option value="mariage">Mariage</option>
+          <option value="grossesse">Grossesse</option>
+          <option value="bebe">Bébé</option>
+          <option value="famille">Famille</option>
+          <option value="bapteme">Baptême</option>
+          <option value="couple">Couple</option>
+        </select>
+      </div>
+  
+      {/* Photo Gallery */}
+      <div className="photolist">
+              <h1 className="title-photolist">Galerie Photos</h1>
+              
+              <div className="gallery">
+              { cate && filteredImages.map(image => {
+                return (
+                  <div key={image.id}>
+                    <img style={{width: '100%'}} src={image.thumbnail} alt={image.title}/>
+                  </div>
+                )})}
+              </div>
+          </div>
+      </>
     )
-}
+  }
 
 export default PostList

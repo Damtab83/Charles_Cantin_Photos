@@ -3,7 +3,7 @@
 
 
 /*  NAVBAR STYLES  */
-.navbar, .footer {
+.navbar {
   display: flex;
   justify-content: space-between;
   background-color: #38AECC;
@@ -41,4 +41,16 @@
 
 h5 {
   font-size: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #38AECC;
+  padding: 10px 16px;
+  color: white;
+  width: 100vw;
+  position:absolute;
+   bottom:0;
+
 }
