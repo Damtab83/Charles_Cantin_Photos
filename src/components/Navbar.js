@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../img/logo.png';
+import { CgCopyright } from "react-icons/cg";
+import { FaFacebook } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { FiTwitter } from "react-icons/fi";
 
 const Navbar = () => {
   return (
@@ -21,6 +25,18 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/contact">Contact</Link>
+          </li>
+          <li class="nav-item dropdown">
+            <Link class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact Social
+            </Link>
+            <ul class="dropdown-menu socialColor">
+              <li><Link class="dropdown-item" to="#"><FaFacebook /> Facebook</Link></li>
+              <li><Link class="dropdown-item" to="#"><BsInstagram /> Instagram</Link></li>
+              <li><Link class="dropdown-item" to="#"><FiTwitter /> Twitter</Link></li>
+              <li><hr class="dropdown-divider"/></li>
+              <li><Link class="dropdown-item" to="https://github.com/Damtab83/Charles_Cantin_Photos.git"><CgCopyright />Tabary D. 2023</Link></li>
+            </ul>
           </li>
         </ul>
       </div>

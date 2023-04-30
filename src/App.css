@@ -16,7 +16,7 @@
   font-size: 20px;
 }
 
-.navbar-menu, .footer-menu {
+.navbar-menu {
   display: flex;
   list-style-type: none;
   gap: 30px;
@@ -24,7 +24,7 @@
   align-items: center;
 }
 
-.navbar-menu li a, .footer-menu li a {
+.navbar-menu li a {
   text-decoration: none;
   color: #FDFFFC;
 }
@@ -33,24 +33,11 @@
   height: 10vh;
 }
 
-/*  FOOTER STYLES  */
-
-.footer-menu li a {
-  margin: 0 25px;
-}
-
-h5 {
-  font-size: 1rem;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
+.socialColor {
   background-color: #38AECC;
-  padding: 10px 16px;
   color: white;
-  width: 100vw;
-  position:absolute;
-   bottom:0;
+}
 
+.socialColor li {
+  text-align: center;
 }
