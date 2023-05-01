@@ -26,8 +26,15 @@
 .contact__form button {
   margin: 0.3rem 0 1rem 0;
   padding: 0.3rem;
+  border-radius: 8px;
 }
 
 .contact__form button {
   font-size: 1.2rem;
+  margin: 5vh 30% 0 50%;
+  width: 50%;
+}
+
+textarea {
+  height: 17vh;
 }
